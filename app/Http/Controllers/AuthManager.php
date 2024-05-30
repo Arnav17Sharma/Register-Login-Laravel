@@ -48,6 +48,8 @@ class AuthManager extends Controller
             Auth::login($user2);
             return redirect()->route('dashboard');
         }
+        // 
+        // THIS BLOCK WILL BE USED WHEN WE NEED TO CHECK HASHED PASSWORDS IN THE DB.
         // $credentials = $request->only('username', 'password');
         // // return $credentials;
         // if (Auth::attempt($credentials)) {
